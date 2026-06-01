@@ -1,12 +1,13 @@
 {
   "name": "789club-taixiu",
   "version": "1.0.0",
-  "description": "Tài Xỉu result server - by @sewdangcap",
+  "description": "T\u00e0i X\u1ec9u result server - by @sewdangcap",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "ws": "^8.18.0"
+    "ws": "^8.18.0",
+    "https-proxy-agent": "^7.0.0"
   }
 }
