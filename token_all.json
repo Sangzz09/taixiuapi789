@@ -1,0 +1,32 @@
+{
+  "MiniGame": {
+    "realm": "MiniGame",
+    "requestId": "20060.219",
+    "apiToken": "25afca9debdce1f6b0e0e2ce78c28fcf",
+    "username": "sangzz09",
+    "password": "14102009",
+    "info": {
+      "info": "{\"ipAddress\":\"14.240.21.213\",\"wsToken\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW5kZXIiOjAsImNhblZpZXdTdGF0IjpmYWxzZSwiZGlzcGxheU5hbWUiOiI1Y2ExczVlYXNlcyIsImJvdCI6MCwiaXNNZXJjaGFudCI6ZmFsc2UsInZlcmlmaWVkQmFua0FjY291bnQiOmZhbHNlLCJwbGF5RXZlbnRMb2JieSI6ZmFsc2UsImN1c3RvbWVySWQiOjY0MjA0NDQxLCJhZmZJZCI6IjkzN2QxNGFhLTYwZDUtNGY3Yy05ZDhlLTg2NDgzN2UyNzI0NiIsImJhbm5lZCI6ZmFsc2UsImJyYW5kIjoiNzg5LmNsdWIiLCJ0aW1lc3RhbXAiOjE3NjIyNTk1ODU4OTYsImxvY2tHYW1lcyI6W10sImFtb3VudCI6MCwibG9ja0NoYXQiOmZhbHNlLCJwaG9uZVZlcmlmaWVkIjpmYWxzZSwiaXBBZGRyZXNzIjoiMTA0LjI4LjIxNC4xNDQiLCJtdXRlIjpmYWxzZSwiYXZhdGFyIjoiaHR0cHM6Ly9hcGkueGV1aS5pby9pbWFnZXMvYXZhdGFyL2F2YXRhcl8wOS5wbmciLCJwbGF0Zm9ybUlkIjo0LCJ1c2VySWQiOiI5MzdkMTRhYS02MGQ1LTRmN2MtOWQ4ZS04NjQ4MzdlMjcyNDYiLCJyZWdUaW1lIjoxNzYyMjU5MjY1MzUwLCJwaG9uZSI6IiIsImRlcG9zaXQiOmZhbHNlLCJ1c2VybmFtZSI6IlM4X2thaWJhMTIzNCJ9.7kzhD7u_LemxP6hYltSBL16VZzhM2_pYDgkxNJlRq-k\",\"locale\":\"vi\",\"userId\":\"25afca9debdce1f6b0e0e2ce78c28fcf\",\"username\":\"sangzz09\",\"timestamp\":1780306007231,\"refreshToken\":\"f03c7ca3baa6561825b10556cbb3ecf8\"}",
+      "signature": "844eee9c0f63f268674d2bfec8ee23ba"
+    },
+    "wsUrl": "wss://demo7892.fun/mini",
+    "sessionId": "rjOndzlR",
+    "capturedAt": "2026-06-01T09:26:39.253Z"
+  },
+  "Simms": {
+    "realm": "Simms",
+    "requestId": "20060.220",
+    "apiToken": "25afca9debdce1f6b0e0e2ce78c28fcf",
+    "username": "sangzz09",
+    "password": "14102009",
+    "info": {
+      "info": "{\"ipAddress\":\"14.240.21.213\",\"wsToken\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW5kZXIiOjAsImNhblZpZXdTdGF0IjpmYWxzZSwiZGlzcGxheU5hbWUiOiI1Y2ExczVlYXNlcyIsImJvdCI6MCwiaXNNZXJjaGFudCI6ZmFsc2UsInZlcmlmaWVkQmFua0FjY291bnQiOmZhbHNlLCJwbGF5RXZlbnRMb2JieSI6ZmFsc2UsImN1c3RvbWVySWQiOjY0MjA0NDQxLCJhZmZJZCI6IjkzN2QxNGFhLTYwZDUtNGY3Yy05ZDhlLTg2NDgzN2UyNzI0NiIsImJhbm5lZCI6ZmFsc2UsImJyYW5kIjoiNzg5LmNsdWIiLCJ0aW1lc3RhbXAiOjE3NjIyNTk1ODU4OTYsImxvY2tHYW1lcyI6W10sImFtb3VudCI6MCwibG9ja0NoYXQiOmZhbHNlLCJwaG9uZVZlcmlmaWVkIjpmYWxzZSwiaXBBZGRyZXNzIjoiMTA0LjI4LjIxNC4xNDQiLCJtdXRlIjpmYWxzZSwiYXZhdGFyIjoiaHR0cHM6Ly9hcGkueGV1aS5pby9pbWFnZXMvYXZhdGFyL2F2YXRhcl8wOS5wbmciLCJwbGF0Zm9ybUlkIjo0LCJ1c2VySWQiOiI5MzdkMTRhYS02MGQ1LTRmN2MtOWQ4ZS04NjQ4MzdlMjcyNDYiLCJyZWdUaW1lIjoxNzYyMjU5MjY1MzUwLCJwaG9uZSI6IiIsImRlcG9zaXQiOmZhbHNlLCJ1c2VybmFtZSI6IlM4X2thaWJhMTIzNCJ9.7kzhD7u_LemxP6hYltSBL16VZzhM2_pYDgkxNJlRq-k\",\"locale\":\"vi\",\"userId\":\"25afca9debdce1f6b0e0e2ce78c28fcf\",\"username\":\"sangzz09\",\"timestamp\":1780306007231,\"refreshToken\":\"f03c7ca3baa6561825b10556cbb3ecf8\"}",
+      "signature": "844eee9c0f63f268674d2bfec8ee23ba",
+      "pid": 4,
+      "subi": true
+    },
+    "wsUrl": "wss://demo7892.fun/card",
+    "sessionId": "sangzz09",
+    "capturedAt": "2026-06-01T09:26:39.385Z"
+  }
+}
