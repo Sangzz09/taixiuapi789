@@ -1,16 +1,26 @@
 const { WebSocket } = require('ws');
 const http = require('http');
-const fs = require('fs');
+const { HttpsProxyAgent } = require('https-proxy-agent');
 
-const PORT = 10000;
+const PORT = process.env.PORT || 10000;
 
-// ================== Đọc token từ file ==================
+// ================== Proxy ==================
+const PROXY_URL = process.env.PROXY_URL || null;
+if (PROXY_URL) {
+    console.log("🔀 Dùng proxy:", PROXY_URL.replace(/:\/\/.*@/, '://***@'));
+} else {
+    console.log("⚠️  Không có proxy, kết nối trực tiếp (có thể bị 403)");
+}
+
+// ================== Đọc token từ Environment Variables ==================
 let TOKEN_DATA = {};
 try {
-    TOKEN_DATA = JSON.parse(fs.readFileSync('./token_all.json', 'utf8'));
-    console.log("✅ Đã đọc token từ token_all.json");
+    const raw = process.env.TOKEN_ALL;
+    if (!raw) throw new Error("Biến môi trường TOKEN_ALL chưa được set");
+    TOKEN_DATA = JSON.parse(raw);
+    console.log("✅ Đã đọc token từ ENV TOKEN_ALL");
 } catch (e) {
-    console.error("❌ Không đọc được token_all.json:", e.message);
+    console.error("❌ Không đọc được token:", e.message);
     process.exit(1);
 }
 
@@ -265,20 +275,25 @@ function onError(ws, error) {
 }
 
 function startWS() {
-    // FIX 1: Dùng wsUrl từ token_all.json thay vì hardcode
     const wsUrl = MINI_TOKEN.wsUrl;
     console.log("🔄 Bắt đầu kết nối WebSocket:", wsUrl);
 
-    const ws = new WebSocket(wsUrl, {
+    const wsOptions = {
         headers: {
             "Origin": "https://789clubs.im",
-            "User-Agent": "Mozilla/5.0",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
             "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Accept-Language": "vi-VN,vi;q=0.9",
+            "Accept-Language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
             "Pragma": "no-cache",
             "Cache-Control": "no-cache"
         }
-    });
+    };
+
+    if (PROXY_URL) {
+        wsOptions.agent = new HttpsProxyAgent(PROXY_URL);
+    }
+
+    const ws = new WebSocket(wsUrl, wsOptions);
 
     ws.on('open',    ()             => onOpen(ws));
     ws.on('message', (data)         => onMessage(ws, data.toString()));
@@ -311,7 +326,7 @@ const server = http.createServer((req, res) => {
 // ================== RUN ==================
 console.log("🚀 Khởi động hệ thống...");
 console.log("code này by phùng huy");
-console.log("Telegram @sewdangcap");
+console.log("Telegram @ngphungggiahuyy");
 console.log("-".repeat(50));
 
 startWS();
